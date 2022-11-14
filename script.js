@@ -6,3 +6,11 @@ function menuFunc() {
       menuVar.style.display = "block";
     }
   }
+
+  function mainMenuFunc() {
+    const subMenu = document.querySelector(".mainnav li ul");
+    subMenu.style.display = 'none';
+    setTimeout(() => {
+        subMenu.style.display = '';
+    }, 100);
+}
