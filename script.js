@@ -5,6 +5,7 @@ function menuFunc() {
     } else {
       menuVar.style.display = "block";
     }
+    // document.getElementById('smallnav-overlay').style.display = 'block';
   }
 
   function mainMenuFunc() {

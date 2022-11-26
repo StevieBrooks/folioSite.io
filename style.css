@@ -9,7 +9,7 @@ body {
     color: #EFF6E0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     line-height: 1.4;
@@ -99,6 +99,9 @@ header a {
     transform: translate(-0.3rem, 0);
     display: none;
 }
+.smallnav ul ul {
+    transform: translate(-0.5rem, 0);
+}
 .mainnav ul ul li {
     border-radius: 10px;
 }
@@ -122,6 +125,16 @@ header a {
 }
 .sn-initials {
     font-family: Kanit;
+}
+.smallnav-overlay {
+    position: absolute;
+    display: none;
+    min-height: 3000px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(130deg, rgb(1, 22, 30), rgb(18, 69, 89));
+    opacity: .8;
+    z-index: 1;
 }
 .banner {
     width: 100%;
@@ -479,3 +492,72 @@ header a {
     }
 }
 
+/* blog pages */
+.blog-wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 2rem;
+}
+.title-banner {
+    min-height: 250px;
+    width: 100%;
+    background: url(pics/blog1-maximalfocus-VT4rx775FT4-unsplash.jpg);
+    background-size: 100%;
+    background-position: 30% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.title-banner .main-title {
+    background-color: #01161E;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+}
+.open-para {
+    width: 80%;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    margin: 5rem auto;
+}
+.blog-wrapper h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 5rem 0 2.5rem;
+}
+.blog-wrapper img {
+    width: 40%;
+    border: 2px solid #EFF6E0;
+    border-radius: 20px;
+    opacity: .8;
+    margin: 3rem;
+}
+.blog-wrapper .img-left {
+    float: left;
+}
+.blog-wrapper .img-right {
+    float: right;
+}
+.blog-wrapper p {
+    margin: 2.5rem auto;
+    line-height: 2.2rem;
+}
+@media (max-width: 700px) {
+    .blog-wrapper img {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .blog-wrapper .title-banner .main-title {
+        font-size: 1.8rem;
+        position: relative;
+        bottom: 1rem;
+    }
+    .blog-wrapper h2 {
+        font-size: 1.5rem;
+        margin: 3rem 0 1.5rem;
+    }
+}
