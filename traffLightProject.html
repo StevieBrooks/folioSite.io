@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: auto;
+            text-align: center;
+        }
+        .traffic-lights {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .light-box {
+            border: 2px solid;
+            border-radius: 30px;
+            background: linear-gradient(135deg, gray, silver, gray);
+            width: fit-content;
+            margin: 1rem auto;
+            padding: .5rem;
+        }
+        .light {
+            width: 70px;
+            height: 70px;
+            border: 2px solid;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+        button {
+            font-size: 1.5rem;
+            padding: .1rem 2.5rem;
+            border-radius: 10px;
+            position: relative;
+            top: -6%;
+        }
+        button:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+        .pole {
+            height: 280px;
+            width: 30px;
+            border: 2px solid;
+            background: linear-gradient(135deg, gray, silver, gray);
+            position: relative;
+            bottom: 50px;
+            z-index: -1;
+        }
+        .fun-box {
+            width: 310px;
+            height: 150px;
+            background: linear-gradient(135deg, gray, silver, gray);
+            border: 2px solid;
+            border-radius: 20px;
+            position: relative;
+            bottom: 330px;
+        }
+        .fun-box .message {
+            width: 80%;
+            height: 80px;
+            margin: 1rem auto;
+            background-color: black;
+            border: 2px solid;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #daftMessage {
+            font-size: 1.6rem;
+            margin: 0;
+            padding: 0;
+        }
+        .pole-base {
+            width: 250px;
+            height: 50px;
+            background: linear-gradient(135deg, gray, silver, gray);
+            border: 2px solid;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+            bottom: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>BrooksCode</title>
+</head>
+<body id="home">
+
+    <header class="main-header">
+        <a href="index.html#home">
+            <h2 class="logo">Brooks[ode</h2>
+        </a>
+        <nav class="mainnav">
+            <ul>
+                <li onclick="mainMenuFunc()"><a href="#" class="menu-title">Menu</a>
+                    <ul>                        
+                        <li><a href="index.html#about">About Me</a></li>
+                        <li><a href="index.html#proj">Projects</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="smallnav">
+            <ul>
+                <li onclick="menuFunc()"><a href="#" class="menu-title"><span class="sn-initials">B[</span> | Menu</a>
+                    <ul>                        
+                        <li onmouseup=""><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Me</a></li>
+                        <li><a href="index.html#proj">Projects</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        
+    <div class="project-wrapper">
+        <section class="traffic-lights">
+            <section class="light-box">
+                <div class="light red-light"></div>
+                <div class="light orange-light"></div>
+                <div class="light green-light"></div>
+            </section>
+            <div class="pole"></div>
+            <div class="pole-base">Property of CodeRage</div>
+            <section class="fun-box">
+                <div class="message">
+                    <p id="daftMessage"></p>
+                </div>
+                <button onclick="start()">Push</button>
+            </section>
+        </section>
+        <a href="https://www.pexels.com/search/traffic%20lights/" target="_blank"><button class="code-button">See Code</button></a>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="copyright">
+            <a href="index.html#home">
+                <h3>Brooks[ode</h3>
+            </a>
+            <p>Copyright &copy; 2022</p>
+        </div>
+        <div class="socials">
+            <a href="https://twitter.com/BrooksCode" target="_blank"><img src="pics/twitter.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/steven-brooks-93813a1b7/" target="_blank"><img src="pics/linkedin.png" alt=""></a>
+            <a href="https://github.com/StevieBrooks" target="_blank"><img src="pics/github.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="traffLights.js"></script>
+</body>
+</html>
