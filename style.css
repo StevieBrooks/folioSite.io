@@ -209,7 +209,14 @@ header a {
     visibility: hidden;
     opacity: 0;
 }
-.card:hover {
+.card button {
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: #598392;
+    padding: .2rem .5rem;
+    border-radius: 10px;
+}
+.card button:hover {
     cursor: pointer;
 }
 .card:hover .card-intro {
@@ -224,6 +231,7 @@ header a {
 .card:hover .card-img {
     transform: scale(1.1) rotate(-3deg);
 }
+
 .contact {
     background: linear-gradient(130deg, #01161E, #124559);
     padding: 1rem;
