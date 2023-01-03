@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
@@ -12,6 +11,17 @@
         body {
             margin: auto;
             text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#01161E;
+    background-size:16px 16px;
         }
         .traffic-lights {
             display: flex;
@@ -33,14 +43,14 @@
             border-radius: 50%;
             margin: 1rem;
         }
-        button {
+        .push-button {
             font-size: 1.5rem;
             padding: .1rem 2.5rem;
             border-radius: 10px;
             position: relative;
             top: -6%;
         }
-        button:hover {
+        .push-button:hover {
             background-color: orange;
             cursor: pointer;
         }
@@ -94,37 +104,6 @@
     <title>BrooksCode</title>
 </head>
 <body id="home">
-
-    <header class="main-header">
-        <a href="index.html#home">
-            <h2 class="logo">Brooks[ode</h2>
-        </a>
-        <nav class="mainnav">
-            <ul>
-                <li onclick="mainMenuFunc()"><a href="#" class="menu-title">Menu</a>
-                    <ul>                        
-                        <li><a href="index.html#about">About Me</a></li>
-                        <li><a href="index.html#proj">Projects</a></li>
-                        <li><a href="index.html#blog">Blog</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <nav class="smallnav">
-            <ul>
-                <li onclick="menuFunc()"><a href="#" class="menu-title"><span class="sn-initials">B[</span> | Menu</a>
-                    <ul>                        
-                        <li onmouseup=""><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#about">About Me</a></li>
-                        <li><a href="index.html#proj">Projects</a></li>
-                        <li><a href="index.html#blog">Blog</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
         
     <div class="project-wrapper">
         <section class="traffic-lights">
@@ -139,26 +118,11 @@
                 <div class="message">
                     <p id="daftMessage"></p>
                 </div>
-                <button onclick="start()">Push</button>
+                <button class="push-button" onclick="start()">Push</button>
             </section>
         </section>
-        <a href="https://github.com/StevieBrooks/folioSite.io/blob/main/traffLights.js" target="_blank"><button class="code-button">See Code</button></a>
     </div>
-    
-    <footer class="main-footer">
-        <div class="copyright">
-            <a href="index.html#home">
-                <h3>Brooks[ode</h3>
-            </a>
-            <p>Copyright &copy; 2022</p>
-        </div>
-        <div class="socials">
-            <a href="https://twitter.com/BrooksCode" target="_blank"><img src="pics/twitter.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/steven-brooks-93813a1b7/" target="_blank"><img src="pics/linkedin.png" alt=""></a>
-            <a href="https://github.com/StevieBrooks" target="_blank"><img src="pics/github.png" alt=""></a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+
     <script src="traffLights.js"></script>
 </body>
 </html>
