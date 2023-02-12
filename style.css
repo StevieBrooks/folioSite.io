@@ -160,7 +160,7 @@ header a {
     float: right;
     margin: 0 0 2rem 2rem;
     border: 2px solid #EFF6E0;
-    border-radius: 60% 40% 33% 67% / 23% 30% 70% 77%;
+    border-radius: 50%;
 }
 .about p {
     line-height: 1.5;
@@ -187,6 +187,11 @@ header a {
 .card-img {
     width: 100%;
     transition: .5s;
+}
+.romeo-card img {
+    width: 237%;
+    position: relative;
+    right: 15rem;
 }
 .card-intro {
     height: 140px;
@@ -264,7 +269,7 @@ header a {
     width: fit-content;
 }
 .main-footer .copyright h3:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 .main-footer .copyright a {
     text-decoration: none;
