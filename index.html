@@ -153,12 +153,22 @@
         <section class="contact center" id="contact">
             <!-- Use Google keyword planner, do research and find something SEO friendly -->
             <h2>Contact</h2>
-            <p>At the moment, I'm still new to Javascript. Although I can currently design a reasonable looking contact form, it would be a little 
-                pretentious if it offered zero in the way of functionality. However, if you'd like to reach out, feel free to contact me using any 
-                of the means below or hit me up on social media. 
+            <p>Nothing would please me more than to see the words "Email from Banter Shack" in my inbox. Therefore, please don't hesitate
+                to get in touch with your queries or suggestions, no matter how small. I am a bubbly character and I like to think I'm one
+                of the friendliest people you will ever meet. I look forward to hearing from you with open arms.
             </p>
-            <p class="con-phone"><span>&#9742;</span> (+84) 0869 194 793</p>
-            <p class="con-email"><span>&#9993;</span> brookscodeblog@gmail.com</p>
+            <form action="https://formsubmit.co/stevebrooks86@hotmail.com" method="POST" class="contact-form">
+                <input type="hidden" name="_next" value="http://www.brookscode.com/thanks-page.html">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Hello, thanks for getting in touch. I will respond at the earliest availability. Thank you!">
+                <input type="hidden" name="_template" value="box">
+
+                <input type="text" name="name" required placeholder="Name">
+                <input type="email" name="email" required placeholder="Email Address">
+                <textarea name="message-box" id="" cols="30" rows="10" placeholder="Please type your message here..."></textarea>
+                <button type="submit">Send</button>
+           </form>
         </section>
         <footer class="main-footer">
             <div class="copyright">

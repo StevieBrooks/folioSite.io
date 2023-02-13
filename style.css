@@ -245,9 +245,38 @@ header a {
     margin: 5rem auto;
     width: 70%;
 }
-.contact .con-phone, .contact .con-email {
-    font-size: 2rem;
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
 }
+
+.contact-form input, .contact-form textarea {
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    background-color: #EFF6E0;
+    border: 2px solid #598392;
+    border-radius: 20px;
+}
+
+.contact-form button {
+    font-size: 1.5rem;
+    padding: .3rem 2rem;
+    margin: .5rem auto;
+    width: fit-content;
+    background-color: #01161E;
+    color: #EFF6E0;
+    border: 2px solid #EFF6E0;
+    border-radius: 20px;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(130deg, #01161E, #124559);
+    cursor: pointer;
+}
+
 .main-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -324,8 +353,8 @@ header a {
     .about p {
         text-align: center;
     }
-    .contact .con-email, .contact .con-phone {
-        font-size: 1rem;
+    .contact-form {
+        width: 99%;
     }
 }
 @media (max-width: 500px) {
